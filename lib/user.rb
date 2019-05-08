@@ -10,4 +10,14 @@ class User
     @jokes.push(joke)
   end
 
+  def tell(user, joke)
+    user.learn(joke)
+  end
+
+  def joke_by_id(id)
+    @jokes.detect do |joke|
+      joke.id == id
+    end
+  end
+
 end
