@@ -6,4 +6,8 @@ class OpenMic
     @date = attributes.fetch(:date)
     @performers = []
   end
+
+  def welcome(performer)
+    @performers.push(performer)
+  end
 end
